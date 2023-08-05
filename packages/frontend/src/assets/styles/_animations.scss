@@ -1,0 +1,10 @@
+@mixin menu-slide {
+  @keyframes menu-slide {
+    from {
+      transform: translateX(-200px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}

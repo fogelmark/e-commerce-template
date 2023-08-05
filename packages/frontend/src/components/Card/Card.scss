@@ -1,0 +1,33 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/animations';
+
+.grid-even-columns {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  justify-items: center;
+}
+
+.card-content {
+  @include flex(space-between, center, column);
+  border-radius: .5em;
+  box-shadow: 3px 3px 16px #00000035;
+  background-color: $offwhite;
+}
+
+.image-container {
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+
+.product-info {
+  @include flex(space-between, center);
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+}
